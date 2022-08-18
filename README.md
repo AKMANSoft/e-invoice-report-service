@@ -11,7 +11,7 @@ This README would normally document whatever steps are necessary to get your app
 * Step 4: Pdf file auto download in browser or you can find it in source code with path ../src/main/resources/pdf
 
 
-If you want to generate pdf file with dynamic data input, you can using Postman call POST method:
+If you want to generate pdf file with dynamic data input, you can using Postman call with POST method:
 Import curl in postman:
 curl --location --request POST 'http://localhost:8080/report' \
 --header 'Content-Type: application/json' \
