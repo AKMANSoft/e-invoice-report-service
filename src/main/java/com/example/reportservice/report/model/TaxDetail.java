@@ -8,6 +8,8 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.FieldDefaults;
 
 import java.math.BigDecimal;
+import java.text.DecimalFormat;
+import java.util.Objects;
 
 @Data
 @AllArgsConstructor
@@ -28,4 +30,12 @@ public class TaxDetail {
 	BigDecimal grossAmount;
 
 	String taxRateName;
+
+	String taxCategoryFormat;
+
+	public void taxCategoryFormat(){
+		if(Objects.nonNull(this.taxRate)){
+			taxCategoryFormat = String.format("%s (%s)",taxCategory, new DecimalFormat("0.#").format(taxRate.doubleValue() * 100)+"%");
+		}
+	}
 }

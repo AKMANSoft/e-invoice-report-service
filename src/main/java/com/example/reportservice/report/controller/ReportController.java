@@ -28,7 +28,7 @@ public class ReportController {
                 "    \"branchCode\" : \"00\",\n" +
                 "    \"branchName\" : \"Mr. JOSEPH BARON KIWANUKA\",\n" +
                 "    \"tin\" : \"1012383739\",\n" +
-                "    \"ninBrn\" : \"CM86047105PN3A/\",\n" +
+                "    \"ninBrn\" : \"CM86047105PN3A\",\n" +
                 "    \"legalName\" : \"Mr. JOSEPH BARON KIWANUKA\",\n" +
                 "    \"businessName\" : \"Mr. JOSEPH BARON KIWANUKA\",\n" +
                 "    \"address\" : \"   KYENGERA WAKISO BUSIRO EAST KYENGERA TOWN COUNCIL  \",\n" +
