@@ -254,7 +254,11 @@
                     </tr>
                     <tr th:if="${not #strings.isEmpty(summaryGrossAmount)}">
                         <td colspan="2" class="b-left td-width">Gross Amount:</td>
-                        <td colspan="5"><span th:text="${summaryGrossAmount}"></span></td>
+                        <td colspan="5">
+                            <span th:text="${summaryGrossAmount}"></span>
+                            <span><br /></span>
+                            <span th:text="${summaryGrossAmountWords} "></span>
+                        </td>
                     </tr>
                     <tr>
                         <td colspan="7" class="bold">Payment Mode</td>

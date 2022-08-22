@@ -5,6 +5,7 @@ import com.example.reportservice.report.exception.ApplicationException;
 import com.example.reportservice.report.model.PayWay;
 import com.example.reportservice.report.model.TaxDetail;
 import com.example.reportservice.report.service.IReportService;
+import com.example.reportservice.report.utils.DecimalToWordUtils;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.EncodeHintType;
 import com.google.zxing.WriterException;
@@ -110,6 +111,7 @@ public class ReportServiceImpl implements IReportService {
         params.put("summaryNetAmount",summary.getNetAmount());
         params.put("summaryTaxAmount",summary.getTaxAmount());
         params.put("summaryGrossAmount",summary.getGrossAmount());
+        params.put("summaryGrossAmountWords", DecimalToWordUtils.getDecimalValue(summary.getGrossAmount().toString()));
         params.put("qr_web_url",summary.getQrCode());
         var payWays = req.getPayWay();
         params.put("payWays",payWays);
